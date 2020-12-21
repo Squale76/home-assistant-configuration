@@ -1,0 +1,12 @@
+# Ignore les répertoires
+/lib
+/node_modules
+/nodes
+
+# Ignore les fichiers
+.config.*
+*.backup
+flows_cred.json
+node-red-contrib-home-assistant-websocket.json
+package.json
+settings.js

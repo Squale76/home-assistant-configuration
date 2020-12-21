@@ -1,0 +1,25 @@
+# Generic folders
+.git
+.vscode
+.idea
+
+# Generic files
+*.log
+*.logs
+*.db
+*.pyc
+._*
+__pycache__
+
+# Specific file ignores
+known_devices.yaml
+secrets.yaml
+.google_maps_location_sharing*
+
+# Specific folders ignores
+.cloud
+.storage
+custom_components
+deps
+www/community/lovelace-meteofrance-weather-card
+www/community/mini-graph-card
