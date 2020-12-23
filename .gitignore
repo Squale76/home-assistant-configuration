@@ -1,0 +1,12 @@
+# Generic folders
+.git
+.vscode
+.idea
+
+# Generic files
+*.log
+*.logs
+*.db
+*.pyc
+._*
+__pycache__

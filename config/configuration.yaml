@@ -1,27 +1,39 @@
+homeassistant:
+  name: Maison
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  elevation: !secret homeassistant_elevation
+  unit_system: metric
+  temperature_unit: c
+  time_zone: !secret homeassistant_time_zone
+  external_url: !secret homeassistant_url_externe
+  internal_url:  !secret homeassistant_url_interne
+
+  packages: !include_dir_named integrations
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
-default_config:
+# default_config:
 
-logger:
-  default: warning
-  logs:
-    homeassistant.components.webhook: debug
+# logger:
+#   default: warning
+#   logs:
+#     homeassistant.components.webhook: debug
 
-#: 
+#mqtt: 
 #  broker: core-mosquitto 
 #  discovery: true
 
-# Text to speech
-tts:
-  - platform: google_translate
+# # Text to speech
+# tts:
+#   - platform: google_translate
 
-group: !include groups.yaml
-automation: !include automations.yaml
-script: !include scripts.yaml
-scene: !include scenes.yaml
+# group: !include groups.yaml
+# automation: !include automations.yaml
+# script: !include scripts.yaml
+# scene: !include scenes.yaml
 
-panel_iframe:
-  mdiindex:
-    title: MDI Icon Index
-    icon: mdi:vector-square
-    url: https://cdn.rawgit.com/james-fry/home-assistant-mdi/efd95d7a/home-assistant-mdi.html
+# panel_iframe:
+#   mdiindex:
+#     title: MDI Icon Index
+#     icon: mdi:vector-square
+#     url: https://cdn.rawgit.com/james-fry/home-assistant-mdi/efd95d7a/home-assistant-mdi.html

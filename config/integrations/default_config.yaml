@@ -1,0 +1,2 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:

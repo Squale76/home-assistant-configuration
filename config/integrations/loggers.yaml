@@ -1,0 +1,4 @@
+logger:
+  default: warning
+  logs:
+    homeassistant.components.webhook: debug

@@ -1,0 +1,5 @@
+platform: emby_upcoming_media
+api_key: d5825b1562d04ad4a13e9417db038985
+#user_id: homeAssistant
+host: 192.168.0.240
+port: 8096

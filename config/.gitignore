@@ -6,7 +6,7 @@
 # Generic files
 *.log
 *.logs
-*.db
+*.db*
 *.pyc
 ._*
 __pycache__
