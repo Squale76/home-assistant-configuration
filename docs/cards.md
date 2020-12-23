@@ -238,6 +238,8 @@ severity:
 name: Aquara 1
   ```
 
+</details>
+
 <details><summary>Batterie Control Center</summary>
 
   ```yaml
@@ -252,6 +254,8 @@ severity:
 name: Control Center
   ```
 
+</details>
+
 <details><summary>Batterie Samsung A8</summary>
 
   ```yaml
@@ -265,3 +269,5 @@ severity:
   red: 10
 name: A8 (Sylvain)
   ```
+
+</details>
