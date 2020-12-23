@@ -1,0 +1,17 @@
+#
+#  https://hacf.fr/installation-influxdb-home-assistant/
+#
+influxdb:
+  host: a0d7b954-influxdb
+  port: 8086
+  database: homeassistantDB
+  username: !secret influxdb_user
+  password: !secret influxdb_password
+  max_retries: 3
+  default_measurement: state
+  include: ## début de la nouveauté pour inclure
+    entities:
+       - sensor.aquara_1_temperature
+       - sensor.aquara_1_humidity
+       - sensor.index
+       - sensor.index_wh
