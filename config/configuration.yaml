@@ -1,3 +1,6 @@
+lovelace:
+  mode: yaml
+  
 homeassistant:
   name: Maison
   latitude: !secret homeassistant_latitude
@@ -11,9 +14,6 @@ homeassistant:
 
   packages: !include_dir_named integrations
 
-# Configure a default setup of Home Assistant (frontend, api, etc)
-# default_config:
-
 # logger:
 #   default: warning
 #   logs:
@@ -23,17 +23,7 @@ homeassistant:
 #  broker: core-mosquitto 
 #  discovery: true
 
-# # Text to speech
-# tts:
-#   - platform: google_translate
-
 # group: !include groups.yaml
 # automation: !include automations.yaml
 # script: !include scripts.yaml
 # scene: !include scenes.yaml
-
-# panel_iframe:
-#   mdiindex:
-#     title: MDI Icon Index
-#     icon: mdi:vector-square
-#     url: https://cdn.rawgit.com/james-fry/home-assistant-mdi/efd95d7a/home-assistant-mdi.html
