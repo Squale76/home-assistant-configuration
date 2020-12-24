@@ -5,4 +5,4 @@ views:
   - !include views/weather.yaml
   # - !include views/energies.yaml
   - !include views/temperature.yaml
-  # - !include views/batteries.yaml
+  - !include views/batteries.yaml

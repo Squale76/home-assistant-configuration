@@ -1,0 +1,9 @@
+type: gauge
+entity: sensor.controlcenter_niveau_de_batterie
+min: 0
+max: 100
+severity:
+  green: 80
+  yellow: 50
+  red: 30
+name: Control Center
