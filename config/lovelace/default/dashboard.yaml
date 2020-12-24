@@ -1,0 +1,8 @@
+#
+# Liste les views pour le dashboard
+#
+views:
+  - !include views/weather.yaml
+  # - !include views/energies.yaml
+  # - !include views/temperatures.yaml
+  # - !include views/batteries.yaml

@@ -1,0 +1,11 @@
+#
+# Liste tous les dashboards avec leurs fichiers respectifs
+#
+# https://www.home-assistant.io/lovelace/dashboards-and-views/#dashboards
+#
+default-yaml:
+  mode: yaml
+  title: Maison (manuel)
+  icon: mdi:view-dashboard
+  show_in_sidebar: true
+  filename: lovelace/default/dashboard.yaml

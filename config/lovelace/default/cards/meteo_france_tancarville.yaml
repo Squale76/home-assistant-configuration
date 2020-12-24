@@ -1,0 +1,14 @@
+#
+# Définition de la carte Météo France pour Tancarville
+#
+type: 'custom:meteofrance-weather-card'
+entity: weather.tancarville
+number_of_forecasts: '7'
+name: Tancarville
+rainChanceEntity: sensor.tancarville_rain_chance
+uvEntity: sensor.tancarville_uv
+cloudCoverEntity: sensor.tancarville_cloud_cover
+freezeChanceEntity: sensor.tancarville_freeze_chance
+snowChanceEntity: sensor.tancarville_snow_chance
+alertEntity: sensor.76_weather_alert
+rainForecastEntity: sensor.tancarville_next_rain

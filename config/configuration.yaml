@@ -1,13 +1,9 @@
-lovelace:
-  mode: yaml
-  
 homeassistant:
   name: Maison
   latitude: !secret homeassistant_latitude
   longitude: !secret homeassistant_longitude
   elevation: !secret homeassistant_elevation
   unit_system: metric
-  temperature_unit: c
   time_zone: !secret homeassistant_time_zone
   external_url: !secret homeassistant_url_externe
   internal_url:  !secret homeassistant_url_interne
