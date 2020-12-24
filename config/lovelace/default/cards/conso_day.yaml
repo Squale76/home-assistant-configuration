@@ -1,0 +1,25 @@
+align_icon: left
+color_thresholds:
+  - color: '#11f13a'
+    value: 900
+  - color: '#f0da11'
+    value: 1800
+  - color: '#ef5a0f'
+    value: 2700
+  - color: '#ef1d0f'
+    value: 3600
+entities:
+  - sensor.index_wh
+unit: Wh
+aggregate_func: delta
+hours_to_show: 24
+hour24: true
+more_info: false
+name: Conso EDF par jour
+points_per_hour: 2
+animate: true
+show:
+  labels: true
+  name: true
+  state: false
+type: 'custom:mini-graph-card'

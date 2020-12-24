@@ -1,0 +1,24 @@
+align_icon: left
+color_thresholds:
+  - color: '#11f13a'
+    value: 1800
+  - color: '#f0da11'
+    value: 3600
+  - color: '#ef5a0f'
+    value: 5400
+  - color: '#ef1d0f'
+    value: 7200
+entities:
+  - sensor.index_wh
+unit: kWh
+hours_to_show: 168
+hour24: true
+more_info: false
+name: Conso EDF par semaine
+points_per_hour: 1
+animate: true
+show:
+  labels: true
+  name: true
+  state: false
+type: 'custom:mini-graph-card'
