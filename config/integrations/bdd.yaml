@@ -11,7 +11,7 @@ influxdb:
   default_measurement: state
   include: ## début de la nouveauté pour inclure
     entities:
-       - sensor.aquara_1_temperature
-       - sensor.aquara_1_humidity
+       - sensor.aqara_1_temperature
+       - sensor.aqara_1_humidity
        - sensor.index
        - sensor.index_wh

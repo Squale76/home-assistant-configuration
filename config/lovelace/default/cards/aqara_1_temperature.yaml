@@ -1,0 +1,24 @@
+align_icon: left
+color_thresholds:
+  - color: '#1da4f2'
+    value: 18
+  - color: '#11f13a'
+    value: 20
+  - color: '#f0da11'
+    value: 22
+  - color: '#ef5a0f'
+    value: 24
+  - color: '#ef1d0f'
+    value: 25
+entities:
+  - sensor.aqara_1_temperature
+hours_to_show: 24
+hour24: true
+line_color: '#1da4f2'
+more_info: false
+name: Chambre Morgane
+points_per_hour: 2
+show:
+  labels: true
+  name: true
+type: 'custom:mini-graph-card'
