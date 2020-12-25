@@ -6,7 +6,7 @@
 #
 lovelace:
   # This is the default storage mode. My main Lovelace dashboard is UI managed.
-  mode: storage
+  mode: yaml
 
   # Include external resources only add when mode is yaml, otherwise manage in the resources in the lovelace configuration panel.
   resources:
