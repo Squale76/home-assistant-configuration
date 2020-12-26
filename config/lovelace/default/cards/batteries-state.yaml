@@ -1,0 +1,14 @@
+title: "Niveau des batteries"
+color_gradient:
+  - "#ff0000" # red
+  - "#ffff00" # yellow
+  - "#00ff00" # green
+sort_by_level: "asc"
+entities:
+  - entity: sensor.controlcenter_niveau_de_batterie
+    name: "Control Center"
+  - entity: sensor.aqara_1_battery
+    name: "Aqara 1"
+  - entity: sensor.sm_a530f_sg_niveau_de_batterie
+    name: "A8 (Sylvain)"
+type: 'custom:battery-state-card'

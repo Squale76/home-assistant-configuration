@@ -10,6 +10,7 @@ visible:
   - user: 70f707680ce04c099256a5d4e5c408d8
 badges: []
 cards:
-  - !include ../cards/aqara_1_battery.yaml
-  - !include ../cards/controlCenter_battery.yaml
-  - !include ../cards/sm_a530f_sg_battery.yaml
+  # - !include ../cards/aqara_1_battery.yaml
+  # - !include ../cards/controlCenter_battery.yaml
+  # - !include ../cards/sm_a530f_sg_battery.yaml
+  - !include ../cards/batteries-state.yaml
