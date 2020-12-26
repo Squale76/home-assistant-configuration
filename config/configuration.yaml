@@ -9,20 +9,3 @@ homeassistant:
   internal_url:  !secret homeassistant_url_interne
 
   packages: !include_dir_named integrations
-
-http:
-
-  
-# logger:
-#   default: warning
-#   logs:
-#     homeassistant.components.webhook: debug
-
-#mqtt: 
-#  broker: core-mosquitto 
-#  discovery: true
-
-# group: !include groups.yaml
-# automation: !include automations.yaml
-# script: !include scripts.yaml
-# scene: !include scenes.yaml
