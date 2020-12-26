@@ -10,6 +10,9 @@ homeassistant:
 
   packages: !include_dir_named integrations
 
+http:
+
+  
 # logger:
 #   default: warning
 #   logs:

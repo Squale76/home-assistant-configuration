@@ -1,0 +1,26 @@
+views:
+  - visible:
+      - user: 971dbf8b5ae94402bbe40951236f8573
+      - user: 55dddfb527e849878cce6b4559d93f66
+      - user: 20ca6d655c1b4823acbcdbc9b563a9d7
+      - user: 70f707680ce04c099256a5d4e5c408d8
+    badges: []
+    panel: true
+    cards:
+      - elements:
+          - type: icon
+            icon: 'mdi:account-details'
+            title: Naviguer vers la page Profil
+            tap_action:
+              action: navigate
+              navigation_path: /profile
+            style:
+              color: var(--primary-color)
+              top: 88%
+              left: 47%
+              border: 1px solid var(--primary-color)
+              border-radius: 9px
+              padding: 2px 10px
+              transform: scale(1.8)
+        image: /local/lovelace/redirect/404.png?v=0.0.4
+        type: picture-elements
