@@ -1,0 +1,8 @@
+#
+# https://www.home-assistant.io/components/logger/
+#
+logger:
+  default: warning
+#  logs:
+#    homeassistant.components.meteo_france: debug
+#    homeassistant.components.webhook: debug
