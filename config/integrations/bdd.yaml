@@ -1,17 +1,38 @@
 #
-#  https://hacf.fr/installation-influxdb-home-assistant/
+# https://hacf.fr/installation-influxdb-home-assistant/
+# https://github.com/hassio-addons/addon-influxdb
+# https://github.com/hassio-addons/addon-grafana
+# https://www.home-assistant.io/integrations/influxdb/
 #
 influxdb:
+
+  # This is the Hass.io add-on slug, allowing a direct connection to the addon.
   host: a0d7b954-influxdb
   port: 8086
+  
+  # The database name to store all the metrics in.
   database: homeassistantDB
+
+  # Authentication credentials.
   username: !secret influxdb_user
   password: !secret influxdb_password
+
+  # Max number of retries in case of a failure.
   max_retries: 3
+
+  # The list of attribute names which should be reported as tags
+  # and not fields to InfluxDB.
+  # I've added `device_class` tag.
+  # tags_attributes:
+  #   - device_class
+
   default_measurement: state
+
+  # I like to specify (whitelist) each thing I'd like to put
+  # into InfluxDB, to keep the database as clean as possible.
   include: ## début de la nouveauté pour inclure
-    entities:
-       - sensor.aqara_1_temperature
-       - sensor.aqara_1_humidity
-       - sensor.index
-       - sensor.index_wh
+    entities: !include_dir_merge_list ../influxdb
+      #  - sensor.aqara_1_temperature
+      #  - sensor.aqara_1_humidity
+      #  - sensor.index
+      #  - sensor.index_wh
