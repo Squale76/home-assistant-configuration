@@ -10,14 +10,14 @@ influxdb:
   host: a0d7b954-influxdb
   port: 8086
   
-  # The database name to store all the metrics in.
+  # Le nom de la base de données dans laquelle stocker tous les métriques.
   database: homeassistantDB
 
-  # Authentication credentials.
+  # Informations d'identification.
   username: !secret influxdb_user
   password: !secret influxdb_password
 
-  # Max number of retries in case of a failure.
+  # Nombre maximum d'essai en cas d'échec.
   max_retries: 3
 
   # The list of attribute names which should be reported as tags
@@ -28,7 +28,8 @@ influxdb:
 
   default_measurement: state
 
-  # I like to specify (whitelist) each thing I'd like to put
-  # into InfluxDB, to keep the database as clean as possible.
-  include: ## début de la nouveauté pour inclure
+  # Je préfère spécifier une "whitelist" où je défini seulement les entités que
+  # je veux historiser pour garder la base de données la plus légère et propre
+  # que possible.
+  include: ## Seules les entités listées seront sauvegardées
     entities: !include_dir_merge_list ../influxdb
