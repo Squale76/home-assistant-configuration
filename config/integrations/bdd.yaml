@@ -32,7 +32,3 @@ influxdb:
   # into InfluxDB, to keep the database as clean as possible.
   include: ## début de la nouveauté pour inclure
     entities: !include_dir_merge_list ../influxdb
-      #  - sensor.aqara_1_temperature
-      #  - sensor.aqara_1_humidity
-      #  - sensor.index
-      #  - sensor.index_wh
