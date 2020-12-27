@@ -5,10 +5,12 @@
 # https://www.home-assistant.io/lovelace/dashboards-and-views
 #
 lovelace:
-  # This is the default storage mode. My main Lovelace dashboard is UI managed.
+  # Il s'agit du mode de stockage par défaut.
   mode: yaml
 
-  # Include external resources only add when mode is yaml, otherwise manage in the resources in the lovelace configuration panel.
+  # Inclusion des ressources externes
+  # Ajouter uniquement lorsque le mode est défini à yaml
+  # Sinon gérer les ressources dans le panneau de configuration Lovelace.
   resources:
     - url: /hacsfiles/lovelace-meteofrance-weather-card/meteofrance-weather-card.js
       type: module
@@ -19,5 +21,5 @@ lovelace:
     - url: /hacsfiles/upcoming-media-card/upcoming-media-card.js
       type: module
 
-  # Additional YAML-based Lovelace dashboards
+  # Tableaux de bord Lovelace supplémentaires basés sur YAML
   dashboards: !include ../lovelace/dashboards.yaml
