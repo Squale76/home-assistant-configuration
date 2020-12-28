@@ -1,0 +1,5 @@
+#
+# Evènement : démarrage de Home Assistant
+#
+event: start
+platform: homeassistant

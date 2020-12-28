@@ -1,0 +1,3 @@
+service: notify.mobile_app_sm_a530f_sg
+data:
+  message: "Home Assitant a redémarré !"
