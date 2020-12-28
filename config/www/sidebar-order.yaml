@@ -1,19 +1,33 @@
 #
 #
 #
-title: Hass
-order:
-  - item: map
-    hide: true
-  - item: logbook
-    hide: true
-  - item: history
-    hide: true
+title: Home Assistant
+# order:
+#   - item: Carte
+#     hide: true
+#   - item: map
+#     hide: true
 exceptions:
-  - user: admin
+  - not_user: Admin
     base_order: true
     order:
+      - item: Carte
+        hide: true
       - item: map
-        hide: false
-      - item: developer tools
+        hide: true
+      - item: Aperçu
+        hide: true
+      - item: overview
+        hide: true
+      - item: Historique
+        hide: true
+      - item: history
+        hide: true
+      - item: Journal
+        hide: true
+      - item: logbook
+        hide: true
+      - item: MDI Icon Index
+        hide: true
+      - item: Navigateur multimédia
         hide: true

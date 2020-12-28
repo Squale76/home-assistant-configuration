@@ -9,3 +9,7 @@ homeassistant:
   internal_url:  !secret homeassistant_url_interne
 
   packages: !include_dir_named integrations
+
+frontend:
+  extra_module_url:
+    - /hacsfiles/custom-sidebar/custom-sidebar.js
