@@ -1,0 +1,6 @@
+#
+# https://github.com/Villhellm/custom-sidebar
+#
+frontend:
+  extra_module_url:
+    - /hacsfiles/custom-sidebar/custom-sidebar.js
