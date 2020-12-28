@@ -8,4 +8,7 @@
   trigger:
     - !include ../../triggers/start_ha.yaml
   action:
-    - !include ../../actions/notify_sm_a530f_sg.yaml
+    service: script.notify_sm_a530f_sg
+    data:
+      title: 'HA Core'
+      message: 'HA a redémarré !'

@@ -1,0 +1,17 @@
+#
+# Script de notification sur A8 (Sylvain)
+#
+notify_sm_a530f_sg:
+  description: 'Envoi une notification'
+  fields:
+    title:
+      description: 'Le titre de la notification'
+      example: 'L''état a changé'
+    message:
+      description: 'Le contenu du message'
+      example: 'La lampe est allumée !'
+  sequence:
+    - service: notify.notify
+      data:
+        title: "{{ title }}"
+        message: "{{ message }}"
