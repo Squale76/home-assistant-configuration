@@ -21,6 +21,4 @@ secrets.yaml
 .storage
 custom_components
 deps
-www/community/lovelace-meteofrance-weather-card
-www/community/mini-graph-card
-www/community/upcoming-media-card
+www/community
