@@ -2,6 +2,7 @@
 # Liste les views pour le dashboard
 #
 views:
+  - !include views/freebox_landscape.yaml
   - !include views/weather.yaml
   - !include views/energies.yaml
   - !include views/temperature.yaml

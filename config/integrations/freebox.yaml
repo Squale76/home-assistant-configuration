@@ -1,0 +1,6 @@
+#
+# https://github.com/Pouzor/freebox_player
+#
+freebox_player:
+  remote_code: !secret freebox_player_code
+  host: !secret freebox_player_host

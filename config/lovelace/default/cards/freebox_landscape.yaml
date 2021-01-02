@@ -1,0 +1,402 @@
+type: picture-elements
+elements:
+# 1ère colonne
+  - type: icon
+    icon: 'mdi:volume-plus'
+    title: Vol+
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: vol_inc
+    style:
+      top: 10%
+      left: 3%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:volume-minus'
+    title: Vol-
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: vol_dec
+    style:
+      top: 32%
+      left: 3%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:skip-backward-outline'
+    title: backward
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: bwd
+    style:
+      top: 54%
+      left: 3%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:skip-previous-outline'
+    title: previous
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: prev
+    style:
+      top: 76%
+      left: 3%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+# 2ème colonne
+  - type: icon
+    icon: 'mdi:volume-mute'
+    title: volume mute
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: mute
+    style:
+      top: 10%
+      left: 14%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:record-rec'
+    title: record
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: rec
+    style:
+      top: 32%
+      left: 14%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+      color: rgba(255, 0, 0, 1)
+  - type: icon
+    icon: 'mdi:play-pause'
+    title: play/pause
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: play
+    style:
+      top: 54%
+      left: 14%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+# 3ème colonne
+  - type: icon
+    icon: 'mdi:pan-up'
+    title: Prg +
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: prgm_inc
+    style:
+      top: 10%
+      left: 25%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:pan-down'
+    title: Prg -
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: prgm_dec
+    style:
+      top: 32%
+      left: 25%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:skip-forward-outline'
+    title: forward
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: fwd
+    style:
+      top: 54%
+      left: 25%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:skip-next-outline'
+    title: next
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: next
+    style:
+      top: 76%
+      left: 25%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+# 4ème colonne
+  - type: icon
+    icon: 'mdi:numeric-1'
+    title: One
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '1'
+    style:
+      top: 10%
+      left: 36%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:numeric-4'
+    title: Four
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '4'
+    style:
+      top: 32%
+      left: 36%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:numeric-7'
+    title: Seven
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '7'
+    style:
+      top: 54%
+      left: 36%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+# 5ème colonne
+  - type: icon
+    icon: 'mdi:numeric-2'
+    title: Two
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '2'
+    style:
+      top: 10%
+      left: 47%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:numeric-5'
+    title: Five
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '5'
+    style:
+      top: 32%
+      left: 47%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:numeric-8'
+    title: Eight
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '8'
+    style:
+      top: 54%
+      left: 47%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:numeric-0'
+    title: Zero
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '0'
+    style:
+      top: 76%
+      left: 47%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+# 6ème colonne
+  - type: icon
+    icon: 'mdi:numeric-3'
+    title: Three
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '3'
+    style:
+      top: 10%
+      left: 58%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:numeric-6'
+    title: Six
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '6'
+    style:
+      top: 32%
+      left: 58%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:numeric-9'
+    title: Nine
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: '9'
+    style:
+      top: 54%
+      left: 58%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+# 7ème colonne
+  - type: icon
+    icon: 'mdi:backspace-outline'
+    title: Red
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: red
+    style:
+      top: 32%
+      left: 69%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+      color: rgba(255, 0, 0, 1)
+  - type: icon
+    icon: 'mdi:arrow-left-bold-outline'
+    title: Left
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: left
+    style:
+      top: 54%
+      left: 69%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:menu-open'
+    title: Green
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: green
+    style:
+      top: 76%
+      left: 69%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+      color: rgba(0, 255, 0, 1)
+# 8ème colonne
+  - type: icon
+    icon: 'mdi:home'
+    title: FreeHome
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: home
+    style:
+      top: 10%
+      left: 80%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:arrow-up-bold-outline'
+    title: Up
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: up
+    style:
+      top: 32%
+      left: 80%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:checkbox-marked-circle-outline'
+    title: OK
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: ok
+    style:
+      top: 54%
+      left: 80%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:arrow-down-bold-outline'
+    title: Down
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: down
+    style:
+      top: 76%
+      left: 80%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+# 9ème colonne
+  - type: icon
+    icon: 'mdi:power'
+    title: power
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: power
+    style:
+      top: 10%
+      left: 91%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:card-search-outline'
+    title: Blue
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: blue
+    style:
+      top: 32%
+      left: 91%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+      color: rgba(0, 0, 255, 1)
+  - type: icon
+    icon: 'mdi:arrow-right-bold-outline'
+    title: Right
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: right
+    style:
+      top: 54%
+      left: 91%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+  - type: icon
+    icon: 'mdi:information-variant'
+    title: Yellow
+    tap_action:
+      action: call-service
+      service: freebox_player.remote
+      service_data:
+        code: yellow
+    style:
+      top: 76%
+      left: 91%
+      transform: 'translate(50%, 50%) scale(3.5, 3.5)'
+      color: rgba(255, 255, 0, 1)
+
+image: /local/lovelace/freebox-telecommande-bck.png
