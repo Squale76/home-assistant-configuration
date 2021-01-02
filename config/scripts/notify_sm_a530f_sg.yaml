@@ -11,7 +11,7 @@ notify_sm_a530f_sg:
       description: 'Le contenu du message'
       example: 'La lampe est allumée !'
   sequence:
-    - service: notify.notify
+    - service: notify.mobile_app_sm_a530f_sg
       data:
         title: "{{ title }}"
         message: "{{ message }}"
