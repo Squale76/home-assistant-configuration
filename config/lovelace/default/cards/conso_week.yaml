@@ -11,6 +11,7 @@ color_thresholds:
 entities:
   - sensor.index_wh
 unit: kWh
+aggregate_func: delta
 hours_to_show: 168
 hour24: true
 more_info: false
