@@ -1,9 +1,40 @@
 #
 # Liste les views pour le dashboard
 #
+button_card_templates:
+  default:
+    aspect_ratio: 1/1
+    styles:
+      icon:
+        - font-size: 1.5em
+      card:
+        - size: 100%
+        - background-color: '#72685C'
+  red:
+    template: default
+    styles:
+      card:
+        - background-color: '#FF0000'
+  blue:
+    template: default
+    styles:
+      card:
+        - background-color: '#0000FF'
+  green:
+    template: default
+    styles:
+      card:
+        - background-color: '#00FF00'
+  yellow:
+    template: default
+    styles:
+      card:
+        - background-color: '#FFFF00'
 views:
-  - !include views/freebox_landscape.yaml
+  # - !include views/freebox_landscape.yaml
+  - !include views/freebox_button.yaml
   - !include views/weather.yaml
   - !include views/energies.yaml
   - !include views/temperature.yaml
   - !include views/batteries.yaml
+  - !include views/emby.yaml
