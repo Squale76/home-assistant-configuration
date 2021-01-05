@@ -22,3 +22,5 @@ secrets.yaml
 custom_components
 deps
 www/community
+entities/persons
+image
