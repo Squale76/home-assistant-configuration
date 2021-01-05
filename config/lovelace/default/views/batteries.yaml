@@ -3,11 +3,7 @@
 #
 path: batteries
 icon: 'mdi:battery'
-visible:
-  - user: 971dbf8b5ae94402bbe40951236f8573
-  - user: 55dddfb527e849878cce6b4559d93f66
-  - user: 20ca6d655c1b4823acbcdbc9b563a9d7
-  - user: 70f707680ce04c099256a5d4e5c408d8
+visible: !include_dir_list ../visibility
 badges: []
 cards:
   # - !include ../cards/aqara_1_battery.yaml
