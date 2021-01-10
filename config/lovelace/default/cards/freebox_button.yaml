@@ -87,7 +87,7 @@
         - type: 'custom:button-card'
           template: default
           color_type: icon
-          color: rgb(255, 0, 0)
+          color: '#A92123'
           icon: mdi:record-rec
           tap_action:
             action: call-service

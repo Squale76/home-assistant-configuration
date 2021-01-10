@@ -6,31 +6,41 @@ button_card_templates:
     aspect_ratio: 1/1
     styles:
       icon:
+        #- box-shadow: 3px 3px 2px rgba(0,0,0,0.5)
         - height: 85%
         - width: 85%
       card:
-        - size: 100%
+        #- box-shadow: 3px 3px 5px 3px rgba(140,140,140,0.5);
+        - size: 95%
         - background-color: '#72685C'
   red:
     template: default
     styles:
+      icon:
+        - color: '#6F6959'
       card:
-        - background-color: '#FF0000'
+        - background-color: '#A92123'
   blue:
     template: default
     styles:
+      icon:
+        - color: '#6F6959'
       card:
-        - background-color: '#0000FF'
+        - background-color: '#3F9FD1'
   green:
     template: default
     styles:
+      icon:
+        - color: '#6F6959'
       card:
-        - background-color: '#00FF00'
+        - background-color: '#2EC901'
   yellow:
     template: default
     styles:
+      icon:
+        - color: '#6F6959'
       card:
-        - background-color: '#FFFF00'
+        - background-color: '#EDE600'
 views:
   # - !include views/freebox_landscape.yaml
   - !include views/freebox_button.yaml
