@@ -6,7 +6,8 @@
 #
 lovelace:
   # Il s'agit du mode de stockage par défaut.
-  mode: yaml
+  # mode: yaml
+  mode: storage
 
   # Inclusion des ressources externes
   # Ajouter uniquement lorsque le mode est défini à yaml
