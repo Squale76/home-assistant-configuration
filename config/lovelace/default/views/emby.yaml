@@ -1,0 +1,9 @@
+#
+# Définition de la vue avec les accès autorisés
+#
+path: emby
+icon: 'mdi:filmstrip'
+visible: !include_dir_list ../visibility
+badges: []
+cards:
+  - !include ../cards/emby.yaml

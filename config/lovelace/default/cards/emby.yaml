@@ -1,0 +1,7 @@
+#
+# https://github.com/custom-cards/upcoming-media-card
+#
+type: custom:upcoming-media-card
+entity: sensor.emby_latest_films
+title: Derniers Films
+image_style: fanart

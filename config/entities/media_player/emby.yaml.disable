@@ -1,8 +1,0 @@
-#
-# https://www.home-assistant.io/integrations/emby/
-#
-# Example configuration.yaml entry
-media_player:
-  - platform: emby
-    host: YOUR_IP_ADDRESS
-    api_key: YOUR_API_KEY

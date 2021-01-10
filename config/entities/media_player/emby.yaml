@@ -1,0 +1,8 @@
+#
+# https://www.home-assistant.io/integrations/emby/
+#
+platform: emby
+host: !secret emby_host
+api_key: !secret emby_key
+port: !secret emby_port_https
+ssl: true
