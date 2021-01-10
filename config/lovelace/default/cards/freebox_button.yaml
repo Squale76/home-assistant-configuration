@@ -7,6 +7,7 @@
           template: default
           icon: mdi:volume-plus
           tap_action:
+            repeat: 500
             action: call-service
             service: freebox_player.remote
             service_data:
@@ -78,6 +79,7 @@
           template: default
           icon: mdi:volume-minus
           tap_action:
+            repeat: 500
             action: call-service
             service: freebox_player.remote
             service_data:
