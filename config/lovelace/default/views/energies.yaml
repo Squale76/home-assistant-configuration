@@ -6,6 +6,7 @@ icon: 'mdi:flash'
 visible: !include_dir_list ../visibility
 badges: []
 cards:
+  - !include ../cards/conso_index.yaml
   - !include ../cards/power.yaml
   - !include ../cards/conso_hour.yaml
   - !include ../cards/conso_day.yaml
