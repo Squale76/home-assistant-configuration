@@ -6,7 +6,8 @@ button_card_templates:
     aspect_ratio: 1/1
     styles:
       icon:
-        - font-size: 1.5em
+        - height: 85%
+        - width: 85%
       card:
         - size: 100%
         - background-color: '#72685C'
