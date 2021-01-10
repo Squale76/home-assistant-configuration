@@ -16,7 +16,7 @@ hours_to_show: 168
 hour24: true
 more_info: false
 name: Conso EDF par semaine
-points_per_hour: 1
+points_per_hour: 0.25
 animate: true
 show:
   labels: true
