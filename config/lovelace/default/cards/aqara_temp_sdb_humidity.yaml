@@ -11,7 +11,7 @@ color_thresholds:
   - color: '#ef1d0f'
     value: 70
 entities:
-  - sensor.aqara_1_humidity
+  - sensor.aqara_temp_sdb_humidity
 hours_to_show: 24
 hour24: true
 line_color: '#1da4f2'

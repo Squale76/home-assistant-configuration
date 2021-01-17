@@ -6,5 +6,5 @@ icon: 'mdi:temperature-celsius'
 visible: !include_dir_list ../visibility
 badges: []
 cards:
-  - !include ../cards/aqara_1_temperature.yaml
-  - !include ../cards/aqara_1_humidity.yaml
+  - !include ../cards/aqara_temp_sdb_temperature.yaml
+  - !include ../cards/aqara_temp_sdb_humidity.yaml

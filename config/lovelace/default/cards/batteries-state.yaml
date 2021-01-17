@@ -7,8 +7,8 @@ sort_by_level: "asc"
 entities:
   - entity: sensor.controlcenter_niveau_de_batterie
     name: "Control Center"
-  - entity: sensor.aqara_1_battery
-    name: "Aqara 1"
+  - entity: sensor.aqara_temp_sdb_battery
+    name: "Aqara SdB"
   - entity: sensor.sm_a530f_sg_niveau_de_batterie
     name: "A8 (Sylvain)"
 type: 'custom:battery-state-card'

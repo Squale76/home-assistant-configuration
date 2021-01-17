@@ -11,7 +11,7 @@ color_thresholds:
   - color: '#ef1d0f'
     value: 25
 entities:
-  - sensor.aqara_1_temperature
+  - sensor.aqara_temp_sdb_temperature
 hours_to_show: 24
 hour24: true
 line_color: '#1da4f2'
