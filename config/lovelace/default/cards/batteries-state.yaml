@@ -9,6 +9,8 @@ entities:
     name: "Control Center"
   - entity: sensor.aqara_temp_sdb_battery
     name: "Aqara SdB"
+  - entity: sensor.aqara_motion_cellier_battery
+    name: "Aqara Mouvement Cellier"
   - entity: sensor.sm_a530f_sg_niveau_de_batterie
     name: "A8 (Sylvain)"
 type: 'custom:battery-state-card'

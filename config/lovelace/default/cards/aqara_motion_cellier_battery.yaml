@@ -1,0 +1,9 @@
+type: gauge
+entity: sensor.aqara_motion_cellier_battery
+min: 0
+max: 100
+severity:
+  green: 80
+  yellow: 40
+  red: 20
+name: Aqara Mouvement Cellier
