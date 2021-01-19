@@ -1,0 +1,12 @@
+#
+# Définition de la vue avec les accès autorisés
+#
+path: lights
+icon: 'mdi:lightbulb-on'
+visible: !include_dir_list ../visibility
+badges: []
+cards:
+  - !include ../cards/light_ikea_400lm_cellier_lavelinge.yaml
+  - !include ../cards/light_ikea_400lm_cellier_porte.yaml
+  - !include ../cards/light_ikea_600lm_salle.yaml
+  - !include ../cards/light_ikea_1000lm_cuisine.yaml

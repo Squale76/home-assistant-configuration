@@ -49,3 +49,4 @@ views:
   - !include views/temperature.yaml
   - !include views/batteries.yaml
   - !include views/emby.yaml
+  - !include views/lights.yaml
