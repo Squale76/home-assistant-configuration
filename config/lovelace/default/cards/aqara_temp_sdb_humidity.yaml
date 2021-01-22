@@ -16,7 +16,7 @@ hours_to_show: 24
 hour24: true
 line_color: '#1da4f2'
 more_info: false
-name: Chambre Morgane
+name: Salle de bains
 points_per_hour: 2
 show:
   labels: true
