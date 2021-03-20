@@ -6,7 +6,6 @@
 - mode: single
   alias: "Notification sur batterie faible du Control Center"
   description: "Notification sur batterie faible sur Control Center"
-  # id: automation-controlcenter_low_battery-1
   trigger:
     - !include ../triggers/state_control_center.yaml
   condition: []
