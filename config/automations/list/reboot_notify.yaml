@@ -1,0 +1,13 @@
+#
+# Notification au redemarrage de HA core
+#
+- mode: restart
+  alias: "Notification au redemarrage de Home Assistant"
+  description: Envoie une notification sur HA Companion à chaque redemarrage de HA core
+  id: automation-reboot-1
+  condition: []
+  trigger:
+    - !include ../triggers/start_ha.yaml
+  action:
+    - service: script.notify_sm_a530f_sg
+      data: !include ../messages/ha_start.yaml
