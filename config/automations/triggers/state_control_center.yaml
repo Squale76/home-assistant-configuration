@@ -1,0 +1,5 @@
+#
+# Evènement : état du Control Center
+#
+platform: state
+entity_id: sensor.controlcenter_niveau_de_batterie
