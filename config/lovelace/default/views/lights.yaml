@@ -9,4 +9,5 @@ cards:
   - !include ../cards/light_ikea_400lm_cellier_lavelinge.yaml
   - !include ../cards/light_ikea_400lm_cellier_porte.yaml
   - !include ../cards/light_ikea_600lm_salle.yaml
-  - !include ../cards/light_ikea_1000lm_cuisine.yaml
+  - !include ../cards/light_ikea_1000lm_terrasse_ouest.yaml
+  - !include ../cards/light_lidl_806lm_cuisine.yaml
