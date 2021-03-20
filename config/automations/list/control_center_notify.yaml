@@ -1,0 +1,33 @@
+#
+# Notification batterie faible sur Control Center
+# Une notification est envoyée toutes les 10 minutes
+# tant que la charge de la batterie est inférieure à 30%
+#
+- mode: single
+  alias: "Notification sur batterie faible du Control Center"
+  description: "Notification sur batterie faible sur Control Center"
+  # id: automation-controlcenter_low_battery-1
+  trigger:
+    - !include ../triggers/state_control_center.yaml
+  condition: []
+  action:
+    - choose:
+        - conditions:
+            - !include ../conditions/control_center_battery_below_30.yaml
+          sequence:
+            - repeat:
+                while:
+                  - !include ../conditions/control_center_battery_below_30.yaml
+                sequence:
+                  - service: script.notify_sm_a530f_sg
+                    data: !include ../messages/controlcenter_low_battery.yaml
+                  - delay:
+                      hours: 0
+                      minutes: 10
+                      seconds: 0
+                      milliseconds: 0
+            - condition: not
+              conditions:
+                - !include ../conditions/control_center_unknown.yaml
+                - !include ../conditions/control_center_unavailable.yaml
+      default: []

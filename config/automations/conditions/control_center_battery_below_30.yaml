@@ -1,0 +1,7 @@
+#
+# Condition : Batterie du Control Center inférieure à 30%
+#
+alias: "Batterie du Control Center inférieure à 30%"
+condition: numeric_state
+entity_id: sensor.controlcenter_niveau_de_batterie
+below: 30

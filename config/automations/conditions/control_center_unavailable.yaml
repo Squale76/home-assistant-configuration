@@ -1,0 +1,7 @@
+#
+# Condition : Batterie du Control état indisponible
+#
+alias: "Batterie du Control état indisponible"
+condition: state
+entity_id: sensor.controlcenter_niveau_de_batterie
+state: "unavailable"
