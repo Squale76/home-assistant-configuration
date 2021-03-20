@@ -1,0 +1,7 @@
+#
+# Message : Coupure de cournant
+#
+title: 'Coupure de Courant'
+message: >-
+  ⚠️ Détection ⚡ Coupure de Courant : 
+  {{(now()|string).split('.')[0]}}

@@ -1,0 +1,7 @@
+#
+# Condition : Onduleur sur batterie en déchargement
+#
+alias: "Etat de l'onduleur : sur batterie"
+condition: state
+entity_id: "sensor.eaton_status_data"
+state: "OB DISCHRG"

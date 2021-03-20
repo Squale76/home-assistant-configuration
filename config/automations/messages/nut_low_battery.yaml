@@ -1,0 +1,7 @@
+#
+# Message : Batterie faible sur Onduleur
+#
+title: 'Onduleur'
+message: >-
+  ⚠️ Onduleur ⚡ Batterie faible : 
+  {{(now()|string).split('.')[0]}}

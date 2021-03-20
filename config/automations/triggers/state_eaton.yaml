@@ -1,0 +1,5 @@
+#
+# Evènement : état de l'onduleur
+#
+platform: state
+entity_id: sensor.eaton_status_data

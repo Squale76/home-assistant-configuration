@@ -1,0 +1,43 @@
+#
+# Notification aux changements d'état de l'onduleur
+#
+- mode: restart
+  alias: "Gestion Onduleur"
+  description: "Notification en fonction des changements d'état de l'onduleur"
+  trigger:
+    - !include ../../triggers/state_eaton.yaml
+  condition: []
+  action:
+    - choose:
+        - conditions:
+            - !include ../../conditions/eaton_on_battery.yaml
+          sequence:
+            - service: script.notify_sm_a530f_sg
+              data: !include ../../messages/power_failure.yaml
+            # - service: persistent_notification.create
+            #   data:
+            #     message: '⚠️ Détection : {{(now()|string).split(''.'')[0]}}'
+            #     title: "⚡ Coupure de Courant \U0001F50B"
+            #     notification_id: '{{ (range(1, 9999)|random) }}'
+        - conditions:
+            - !include ../../conditions/eaton_on_low_battery.yaml
+          sequence:
+            - service: script.notify_sm_a530f_sg
+              data:
+                message: !include ../../messages/nut_low_battery.yaml
+            # - service: persistent_notification.create
+            #   data:
+            #     message: '⚠️ Onduleur : {{(now()|string).split(''.'')[0]}}'
+            #     title: "⚡ Batterie Critique \U0001F50B"
+            #     notification_id: '{{ (range(1, 9999)|random) }}'
+        - conditions:
+            - !include ../../conditions/eaton_unavailable.yaml
+          sequence:
+            - service: script.notify_sm_a530f_sg
+              data:
+                message: !include ../../messages/nut_lost.yaml
+            # - service: persistent_notification.create
+            #   data:
+            #     message: 'ℹ️ Onduleur : {{(now()|string).split(''.'')[0]}}'
+            #     title: "⚡ Perte de l'onduleur \U0001F50C"
+            #     notification_id: '{{ (range(1, 9999)|random) }}'

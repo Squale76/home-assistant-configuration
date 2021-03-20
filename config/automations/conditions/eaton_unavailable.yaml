@@ -1,0 +1,7 @@
+#
+# Condition : Onduleur indisponible
+#
+alias: "Etat de l'onduleur : indisponible"
+condition: state
+entity_id: "sensor.eaton_status_data"
+state: "unavailable"

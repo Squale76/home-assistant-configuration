@@ -1,0 +1,7 @@
+#
+# Condition : Onduleur sur batterie faible en déchargement
+#
+alias: "Etat de l'onduleur : Batterie critique"
+condition: state
+entity_id: "sensor.eaton_status_data"
+state: "LB DISCHRG"
