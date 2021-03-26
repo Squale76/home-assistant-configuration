@@ -1,0 +1,5 @@
+#
+# Evènement : état de la fenêtre de la salle de bain
+#
+platform: state
+entity_id: binary_sensor.aqara_open_sdb_contact

@@ -1,0 +1,7 @@
+#
+# Condition : Fenêtre de la salle de bain fermée
+#
+alias: "Fenêtre de la salle de bain fermée"
+condition: state
+entity_id: binary_sensor.aqara_open_sdb_contact
+state: 'off'

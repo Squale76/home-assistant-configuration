@@ -1,0 +1,6 @@
+#
+# Evènement : augmentation de l'humidité de la salle de bain
+#
+platform: numeric_state
+entity_id: sensor.aqara_temp_sdb_humidity
+above: 45

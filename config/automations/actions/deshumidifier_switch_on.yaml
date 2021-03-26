@@ -1,0 +1,7 @@
+#
+# Condition : Allumer la prise déshumidificateur
+#
+alias: "Allumer la prise déshumidificateur"
+service: switch.turn_on
+target:
+  entity_id: switch.ikea_prise_sdb
