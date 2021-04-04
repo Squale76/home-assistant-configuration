@@ -1,0 +1,5 @@
+#
+# Entrée pour simuler le déshumidificateur de la salle de bains
+#
+deshumidifier_sdb:
+  name: Déshumidificateur

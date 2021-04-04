@@ -1,0 +1,10 @@
+#
+# Entrée pour simuler le taux d'humidité de la salle de bains
+#
+humidity_sdb:
+  name: Humidité
+  initial: 45
+  min: 0
+  max: 100
+  step: 1
+  mode: box

@@ -1,0 +1,5 @@
+#
+# Entrée pour simuler le contact de la fenêtre de la salle de bains
+#
+contact_sdb:
+  name: Fenêtre
