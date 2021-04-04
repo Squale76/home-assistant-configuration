@@ -1,0 +1,7 @@
+#
+# Condition : Pas assez d'humidité dans la salle de bain
+#
+alias: "Pas assez d'humidité dans la salle de bain"
+condition: numeric_state
+entity_id: sensor.aqara_temp_sdb_humidity
+below: 45

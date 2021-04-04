@@ -1,0 +1,7 @@
+#
+# Condition : Prise déshumidificateur allumée
+#
+alias: "Prise déshumidificateur allumée"
+condition: state
+entity_id: switch.ikea_prise_sdb
+state: 'on'

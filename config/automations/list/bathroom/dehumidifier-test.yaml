@@ -1,0 +1,43 @@
+#
+# Gestion de la déshumidification de la salle de bains
+#
+- mode: single
+  alias: "Gestion de la déshumidification (test)"
+  description: "Gestion de la déshumidification de la salle de bains"
+  trigger:
+    - platform: state
+      entity_id: input_boolean.contact_sdb
+    - platform: state
+      entity_id: input_number.humidity_sdb
+  condition: []
+  action:
+    - choose:
+        - conditions:
+            - condition: or
+              conditions:
+                - condition: state
+                  entity_id: input_boolean.contact_sdb
+                  state: 'on'
+                - condition: numeric_state
+                  entity_id: input_number.humidity_sdb
+                  below: '45'
+          sequence:
+            - condition: state
+              entity_id: input_boolean.deshumidifier_sdb
+              state: 'on'
+            - service: input_boolean.turn_off
+              target:
+                entity_id: input_boolean.deshumidifier_sdb
+        - conditions:
+            - condition: numeric_state
+              entity_id: input_number.humidity_sdb
+              above: '44'
+          sequence:
+            - condition: state
+              entity_id: input_boolean.deshumidifier_sdb
+              state: 'off'
+            - service: input_boolean.turn_on
+              target:
+                entity_id: input_boolean.deshumidifier_sdb
+      default: []
+  

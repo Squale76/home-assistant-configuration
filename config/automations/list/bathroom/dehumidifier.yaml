@@ -6,18 +6,22 @@
   description: "Gestion de la déshumidification de la salle de bains"
   trigger:
     - !include ../../triggers/bathroom_window.yaml
-    - !include ../../triggers/bathroom_upper_humidity.yaml
-    - !include ../../triggers/bathroom_lower_humidity.yaml
+    - !include ../../triggers/bathroom_humidity.yaml
   action:
-    - alias: "Turn on deshumifier when window is closed (contact is off), humidity is above 45 and switch is off"
+    - alias: "Turn off deshumifier when window is opened (contact is on) or humidity is below 45"
       choose:
         - conditions:
-          - condition: and
-            conditions:
-              - !include ../../conditions/window_closed.yaml
-              - !include ../../conditions/too_much_humidity.yaml
-              - !include ../../conditions/deshumidifier_switch_off.yaml
+            - condition: or
+              conditions:
+                - !include ../../conditions/window_opened.yaml
+                - !include ../../conditions/not_enough_humidity.yaml
           sequence:
+            - !include ../../conditions/deshumidifier_switch_on.yaml
+            - !include ../../actions/deshumidifier_switch_off.yaml
+        - conditions:
+          - !include ../../conditions/too_much_humidity.yaml
+          sequence:
+            - !include ../../conditions/deshumidifier_switch_off.yaml
             - !include ../../actions/deshumidifier_switch_on.yaml
       default:
         - !include ../../actions/deshumidifier_switch_off.yaml
