@@ -2,6 +2,7 @@
 # Définition de la vue avec les accès autorisés
 #
 path: weather
+panel: true
 icon: 'mdi:theme-light-dark'
 visible: !include_dir_list ../visibility
 badges: []
