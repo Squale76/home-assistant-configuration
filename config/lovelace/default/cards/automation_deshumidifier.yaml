@@ -1,0 +1,14 @@
+type: entities
+entities:
+  - entity: automation.gestion_de_la_deshumidification
+  - type: divider
+  - entity: binary_sensor.aqara_open_sdb_contact
+    name: Fenêtre
+  - entity: sensor.aqara_temp_sdb_humidity
+    name: Humidité
+  - type: divider
+  - entity: switch.ikea_prise_sdb
+    name: Déshumidificateur
+title: Déshumidificateur (maintenance)
+show_header_toggle: false
+state_color: true

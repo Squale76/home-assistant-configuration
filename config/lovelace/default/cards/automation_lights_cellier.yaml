@@ -1,0 +1,10 @@
+type: entities
+entities:
+  - entity: automation.motion_activated_light
+  - type: divider
+  - entity: binary_sensor.aqara_motion_cellier_occupancy
+  - type: divider
+  - entity: light.ikea_400lm_cellier_porte
+  - entity: light.ikea_400lm_cellier_lavelinge
+title: Lumières Cellier (maintenance)
+show_header_toggle: false

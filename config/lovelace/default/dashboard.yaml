@@ -50,3 +50,4 @@ views:
   - !include views/batteries.yaml
   - !include views/emby.yaml
   - !include views/lights.yaml
+  - !include views/automations.yaml

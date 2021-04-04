@@ -1,0 +1,10 @@
+#
+# Définition de la vue avec les accès autorisés
+#
+path: tools
+icon: 'mdi:tune'
+visible: !include_dir_list ../visibility
+badges: []
+cards:
+  - !include ../cards/automation_deshumidifier.yaml
+  - !include ../cards/automation_lights_cellier.yaml
