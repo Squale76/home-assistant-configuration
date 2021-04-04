@@ -1,0 +1,23 @@
+type: custom:apexcharts-card
+apex_config:
+  chart:
+    height: 300px
+graph_span: 2d
+all_series_config:
+  stroke_width: 2
+  curve: smooth
+  type: line
+  group_by:
+    duration: 30min
+    func: avg
+header:
+  show: false
+series:
+  # - entity: sensor.aqara_motion_cellier_humidity
+  #   name: Cellier
+  - entity: sensor.aqara_temp_sdb_humidity
+    name: SdB
+  - entity: sensor.aqara_temp_chbre_morgane_humidity
+    name: Chbre Morgane
+  - entity: sensor.aqara_temp_chbre_parents_humidity
+    name: Chbre Parents

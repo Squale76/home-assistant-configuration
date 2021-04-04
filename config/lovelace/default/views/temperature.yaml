@@ -2,9 +2,15 @@
 # Définition de la vue avec les accès autorisés
 #
 path: temperature
+panel: true
 icon: 'mdi:temperature-celsius'
 visible: !include_dir_list ../visibility
 badges: []
 cards:
-  - !include ../cards/aqara_temp_sdb_temperature.yaml
-  - !include ../cards/aqara_temp_sdb_humidity.yaml
+  - type: vertical-stack
+    cards:
+      - !include ../cards/all-temperatures.yaml
+      - !include ../cards/all-humidity.yaml
+      # - !include ../cards/aqara_temp_sdb_temperature.yaml
+      # - !include ../cards/aqara_temp_sdb_humidity.yaml
+      # - !include ../cards/aqara_temp_chbre_morgane_temperature.yaml
