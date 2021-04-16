@@ -1,0 +1,6 @@
+#
+# https://github.com/remkolems/lovelace-flower-card
+#
+type: 'custom:flower-card'
+entity: plant.fragaria_ananassa
+species: fragaria x ananassa

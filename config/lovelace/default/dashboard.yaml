@@ -51,3 +51,4 @@ views:
   - !include views/emby.yaml
   - !include views/lights.yaml
   - !include views/automations.yaml
+  - !include views/plants.yaml

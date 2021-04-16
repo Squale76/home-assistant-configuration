@@ -1,0 +1,10 @@
+#
+# Définition de la vue Plants avec les accès autorisés
+#
+path: plants
+panel: false
+icon: 'mdi:flower'
+visible: !include_dir_list ../visibility
+badges: []
+cards:
+  - !include ../cards/plant-fragaria_ananassa.yaml
