@@ -1,0 +1,45 @@
+esphome:
+  name: ble_gateway
+  platform: ESP32
+  board: nodemcu-32s
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_pass
+  
+  # Optional manual IP
+  manual_ip:
+    static_ip: !secret ip_ble_gateway
+    gateway: !secret ip_gateway
+    subnet: !secret ip_subnet
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Ble Gateway Fallback Hotspot"
+    password: !secret ap_pass
+
+captive_portal:
+
+# Enable logging
+logger:
+  baud_rate: 0
+
+# Enable Home Assistant API
+api:
+  password: !secret ota_pass
+
+ota:
+  password: !secret ota_pass
+
+esp32_ble_tracker:
+sensor:
+  - platform: xiaomi_hhccjcy01
+    mac_address: !secret mac_addr_miflora1
+    temperature:
+      name: "Xiaomi MiFlora Temperature"
+    moisture:
+      name: "Xiaomi MiFlora Moisture"
+    illuminance:
+      name: "Xiaomi MiFlora Illuminance"
+    conductivity:
+      name: "Xiaomi MiFlora Soil Conductivity"
