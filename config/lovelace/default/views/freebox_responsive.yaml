@@ -1,0 +1,15 @@
+#
+# Définition de la vue avec les accès autorisés
+#
+path: freebox_rs
+icon: 'mdi:calculator'
+visible: !include_dir_list ../visibility
+badges: []
+panel: true
+cards:
+  - type: 'custom:mod-card'
+    card:
+      type: vertical-stack
+      cards:
+        - !include ../cards/freebox_remote_landscape.yaml
+        - !include ../cards/freebox_remote_portrait.yaml

@@ -43,7 +43,7 @@ button_card_templates:
         - background-color: '#EDE600'
 views:
   # - !include views/freebox_landscape.yaml
-  - !include views/freebox_button.yaml
+  - !include views/freebox_responsive.yaml
   - !include views/weather.yaml
   - !include views/energies.yaml
   - !include views/temperature.yaml
