@@ -30,6 +30,7 @@ captive_portal:
 # Enable logging
 logger:
   baud_rate: 0
+  level: INFO
 
 # Enable Home Assistant API
 api:
@@ -47,7 +48,7 @@ uart:
   baud_rate: 1200
   parity: EVEN
   data_bits: 7
-  stop_bits: 1
+  #stop_bits: 1
 
 # déclaration des sensors numérique
 # les sensors doivent être déclarés dans l'ordre de la fonction lambda
