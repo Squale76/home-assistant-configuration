@@ -45,10 +45,11 @@ views:
   # - !include views/freebox_landscape.yaml
   - !include views/freebox_responsive.yaml
   - !include views/weather.yaml
+  - !include views/cassie.yaml
+  - !include views/plants.yaml
   - !include views/energies.yaml
   - !include views/temperature.yaml
   - !include views/batteries.yaml
-  - !include views/emby.yaml
+  # - !include views/emby.yaml
   - !include views/lights.yaml
   - !include views/automations.yaml
-  - !include views/plants.yaml

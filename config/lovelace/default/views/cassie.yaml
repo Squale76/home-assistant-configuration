@@ -1,0 +1,11 @@
+#
+# Définition de la vue chambre de Cassie
+#
+path: cassie
+icon: 'mdi:spotlight'
+visible: 
+  - !include ../visibility/cassie.yaml
+  - !include ../visibility/admin.yaml
+badges: []
+cards:
+  - !include ../cards/wled-cassie.yaml

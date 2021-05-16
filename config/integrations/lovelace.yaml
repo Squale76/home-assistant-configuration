@@ -25,6 +25,22 @@ lovelace:
       type: module
     - url: /hacsfiles/button-card/button-card.js
       type: module
+    # Intégration des ressources pour WLED card
+    # https://github.com/Shaegi/Homeassistant-WLED-Card
+    - url: /local/lib/tingle.min.css
+      type: css
+    - url: /local/wled_control/static/wled.css
+      type: css
+    - url: /local/wled_control/static/effects.js
+      type: js
+    - url: /local/wled_control/static/fastLEDPallete.js
+      type: js
+    - url: /local/lib/tingle.min.js
+      type: js
+    - url: /local/lib/iro.min.js
+      type: js
+    - url: /local/wled_control/wled_control.js
+      type: module
 
   # Tableaux de bord Lovelace supplémentaires basés sur YAML
   dashboards: !include ../lovelace/dashboards.yaml

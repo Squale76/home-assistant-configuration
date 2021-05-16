@@ -1,0 +1,4 @@
+type: custom:wled-control-card
+topic: "wled/chambre/cassie/chevet"
+ip: "wled-cassie.grippon.fr"
+title: WLED-Cassie
