@@ -5,30 +5,19 @@ card:
     - type: horizontal-stack
       cards:
         - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:volume-plus'
-          tap_action:
-            repeat: 500
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: vol_inc
+          color_type: blank-card
+        - type: 'custom:button-card'
+          color_type: blank-card
         - type: 'custom:button-card'
           template: default
-          icon: 'mdi:volume-mute'
+          icon: 'mdi:power'
           tap_action:
             action: call-service
             service: freebox_player.remote
             service_data:
-              code: mute
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:pan-up'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: prgm_inc
+              code: power
+    - type: horizontal-stack
+      cards:
         - type: 'custom:button-card'
           template: default
           icon: 'mdi:numeric-1'
@@ -53,6 +42,152 @@ card:
             service: freebox_player.remote
             service_data:
               code: '3'
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:numeric-4'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: '4'
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:numeric-5'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: '5'
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:numeric-6'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: '6'
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:numeric-7'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: '7'
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:numeric-8'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: '8'
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:numeric-9'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: '9'
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          color_type: blank-card
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:numeric-0'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: '0'
+        - type: 'custom:button-card'
+          color_type: blank-card
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: red
+          icon: 'mdi:backspace-outline'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: red
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:arrow-up-bold-outline'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: up
+        - type: 'custom:button-card'
+          template: blue
+          icon: 'mdi:card-search-outline'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: blue
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:arrow-left-bold-outline'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: left
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:checkbox-marked-circle-outline'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: ok
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:arrow-right-bold-outline'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: right
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
+          template: green
+          icon: 'mdi:menu-open'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: green
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:arrow-down-bold-outline'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: down
+        - type: 'custom:button-card'
+          template: yellow
+          icon: 'mdi:information-variant'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: yellow
+    - type: horizontal-stack
+      cards:
         - type: 'custom:button-card'
           color_type: blank-card
         - type: 'custom:button-card'
@@ -65,13 +200,34 @@ card:
             service_data:
               code: home
         - type: 'custom:button-card'
+          color_type: blank-card
+    - type: horizontal-stack
+      cards:
+        - type: 'custom:button-card'
           template: default
-          icon: 'mdi:power'
+          icon: 'mdi:volume-plus'
+          tap_action:
+            repeat: 500
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: vol_inc
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:volume-mute'
           tap_action:
             action: call-service
             service: freebox_player.remote
             service_data:
-              code: power
+              code: mute
+        - type: 'custom:button-card'
+          template: default
+          icon: 'mdi:pan-up'
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: prgm_inc
     - type: horizontal-stack
       cards:
         - type: 'custom:button-card'
@@ -101,54 +257,6 @@ card:
             service: freebox_player.remote
             service_data:
               code: prgm_dec
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:numeric-4'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: '4'
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:numeric-5'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: '5'
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:numeric-6'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: '6'
-        - type: 'custom:button-card'
-          template: red
-          icon: 'mdi:backspace-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: red
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:arrow-up-bold-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: up
-        - type: 'custom:button-card'
-          template: blue
-          icon: 'mdi:card-search-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: blue
     - type: horizontal-stack
       cards:
         - type: 'custom:button-card'
@@ -175,112 +283,9 @@ card:
             service: freebox_player.remote
             service_data:
               code: fwd
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:numeric-7'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: '7'
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:numeric-8'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: '8'
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:numeric-9'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: '9'
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:arrow-left-bold-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: left
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:checkbox-marked-circle-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: ok
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:arrow-right-bold-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: right
-    - type: horizontal-stack
-      cards:
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:skip-previous-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: prev
-        - type: 'custom:button-card'
-          color_type: blank-card
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:skip-next-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: next
-        - type: 'custom:button-card'
-          color_type: blank-card
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:numeric-0'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: '0'
-        - type: 'custom:button-card'
-          color_type: blank-card
-        - type: 'custom:button-card'
-          template: green
-          icon: 'mdi:menu-open'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: green
-        - type: 'custom:button-card'
-          template: default
-          icon: 'mdi:arrow-down-bold-outline'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: down
-        - type: 'custom:button-card'
-          template: yellow
-          icon: 'mdi:information-variant'
-          tap_action:
-            action: call-service
-            service: freebox_player.remote
-            service_data:
-              code: yellow
+
 style: |
-  @media (orientation: portrait) {
+  @media (orientation: landscape) {
     ha-card {
       display: none;
     }
