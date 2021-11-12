@@ -8,3 +8,10 @@ http:
   # Number of failed login attempts from a single IP after which it will
   # be automatically banned.
   # login_attempts_threshold: 4
+
+  use_x_forwarded_for: true
+  trusted_proxies:
+    # - 127.0.0.1
+    # - 172.30.33.4
+    - 172.30.33.0/24  # You may also provide the subnet mask
+    # - ::1
