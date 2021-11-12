@@ -10,3 +10,37 @@
         - 6d0baafc7a73c4318b1761f0a30a97c9
         - 6027bf7b364ffc48ed016be77100af3a
       no_motion_wait: '0'
+- id: '1630504046253'
+  alias: test-allume WLED
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 798eac867a40d6db1382190943d28fbb
+    type: click
+    subtype: 'on'
+    discovery_id: 0xb4e3f9fffe890508 click_on
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 9b5fbbc64c27d898d1a4351672a50d7e
+    entity_id: light.wled
+    domain: light
+  mode: single
+- id: '1630504162774'
+  alias: test-éteint WLED
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 798eac867a40d6db1382190943d28fbb
+    type: click
+    subtype: 'off'
+    discovery_id: 0xb4e3f9fffe890508 click_off
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 9b5fbbc64c27d898d1a4351672a50d7e
+    entity_id: light.wled
+    domain: light
+  mode: single
