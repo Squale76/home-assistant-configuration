@@ -1,0 +1,28 @@
+#
+# Notification PC serveur éteint
+# Une notification est envoyée toutes les heures
+# tant que le PC Serveur est éteint
+#
+- mode: single
+  alias: "Notification sur PC Serveur éteint"
+  description: "Notification sur PC Serveur éteint"
+  trigger:
+    - !include ../../triggers/state_pc_serveur.yaml
+  condition: []
+  action:
+    - choose:
+        - conditions:
+            - !include ../../conditions/pc_serveur_off.yaml
+          sequence:
+            - repeat:
+                while:
+                  - !include ../../conditions/pc_serveur_off.yaml
+                sequence:
+                  - service: script.notify_sm_a530f_sg
+                    data: !include ../../messages/pc_serveur_off.yaml
+                  - delay:
+                      hours: 1
+                      minutes: 0
+                      seconds: 0
+                      milliseconds: 0
+      default: []

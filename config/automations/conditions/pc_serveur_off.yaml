@@ -1,0 +1,7 @@
+#
+# Condition : Batterie du Control état indisponible
+#
+alias: "PC Serveur éteint"
+condition: state
+entity_id: device_tracker.pc_serveur
+state: not_home

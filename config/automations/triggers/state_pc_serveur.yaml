@@ -1,0 +1,5 @@
+#
+# Evènement : état du Control Center
+#
+platform: state
+entity_id: device_tracker.pc_serveur
