@@ -1,0 +1,12 @@
+type: custom:apexcharts-card
+header:
+  show: true
+  title: Conso instantanée
+  show_states: true
+  colorize_states: true
+all_series_config:
+  stroke_width: 2
+  curve: smooth
+  type: line
+series:
+  - entity: sensor.puissance_actuelle
