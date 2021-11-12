@@ -189,7 +189,14 @@ card:
     - type: horizontal-stack
       cards:
         - type: 'custom:button-card'
-          color_type: blank-card
+          template: default
+          show_entity_picture: true
+          entity_picture: /local/lovelace/replay.png
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: replay
         - type: 'custom:button-card'
           template: default
           show_entity_picture: true
@@ -200,7 +207,14 @@ card:
             service_data:
               code: home
         - type: 'custom:button-card'
-          color_type: blank-card
+          template: default
+          show_entity_picture: true
+          entity_picture: /local/lovelace/330px-Netflix_2015_N_logo.svg.png
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: home,home,right,down,down,down,ok
     - type: horizontal-stack
       cards:
         - type: 'custom:button-card'

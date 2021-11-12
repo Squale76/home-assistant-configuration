@@ -54,7 +54,14 @@ card:
             service_data:
               code: '3'
         - type: 'custom:button-card'
-          color_type: blank-card
+          template: default
+          show_entity_picture: true
+          entity_picture: /local/lovelace/330px-Netflix_2015_N_logo.svg.png
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: home,home,right,down,down,down,ok
         - type: 'custom:button-card'
           template: default
           show_entity_picture: true
