@@ -16,7 +16,7 @@ wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Ble Gateway Fallback Hotspot"
-    password: !secret ap_pass
+    password: !secret ap_ble_pass
 
 captive_portal:
 
@@ -26,10 +26,10 @@ logger:
 
 # Enable Home Assistant API
 api:
-  password: !secret ota_pass
+  password: !secret ota_ble_pass
 
 ota:
-  password: !secret ota_pass
+  password: !secret ota_ble_pass
 
 esp32_ble_tracker:
 sensor:

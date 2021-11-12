@@ -8,3 +8,4 @@ visible: !include_dir_list ../visibility
 badges: []
 cards:
   - !include ../cards/plant-fragaria_ananassa.yaml
+  - !include ../cards/plant-ocimum_basilicum.yaml

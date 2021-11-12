@@ -2,7 +2,13 @@
 # https://www.home-assistant.io/integrations/plant
 #
 plant:
-  fragaria_ananassa:
+  # fragaria_ananassa:
+  #   sensors:
+  #     moisture: sensor.xiaomi_miflora_moisture
+  #     temperature: sensor.xiaomi_miflora_temperature
+  #     conductivity: sensor.xiaomi_miflora_soil_conductivity
+  #     brightness: sensor.xiaomi_miflora_illuminance
+  ocimum_basilicum:
     sensors:
       moisture: sensor.xiaomi_miflora_moisture
       temperature: sensor.xiaomi_miflora_temperature

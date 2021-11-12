@@ -1,0 +1,6 @@
+#
+# https://github.com/remkolems/lovelace-flower-card
+#
+type: 'custom:flower-card'
+entity: plant.ocimum_basilicum
+species: ocimum basilicum
