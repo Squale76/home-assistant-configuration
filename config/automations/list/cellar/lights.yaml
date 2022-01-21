@@ -1,0 +1,11 @@
+- alias: "Gestion lumière cellier : Allume/Eteint si quelqu'un"
+  description: Gestion lumière du Cellier
+  use_blueprint:
+    path: homeassistant/motion_light.yaml
+    input:
+      motion_entity: binary_sensor.aqara_motion_cellier_occupancy
+      light_target:
+        device_id:
+        - 6d0baafc7a73c4318b1761f0a30a97c9
+        - 6027bf7b364ffc48ed016be77100af3a
+      no_motion_wait: '0'
