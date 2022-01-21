@@ -3,5 +3,5 @@
 #
 alias: "Etat de l'onduleur : Batterie critique"
 condition: state
-entity_id: "sensor.eaton_status_data"
+entity_id: sensor.eaton_3s_550_status_data
 state: "LB DISCHRG"

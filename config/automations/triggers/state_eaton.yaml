@@ -2,4 +2,4 @@
 # Evènement : état de l'onduleur
 #
 platform: state
-entity_id: sensor.eaton_status_data
+entity_id: sensor.eaton_3s_550_status_data
