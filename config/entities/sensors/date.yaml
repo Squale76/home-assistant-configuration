@@ -1,0 +1,7 @@
+# Création d'un capteur pour avoir la date actuelle.
+#
+# https://www.home-assistant.io/integrations/time_date/
+#
+platform: time_date
+display_options:
+  - 'date'
