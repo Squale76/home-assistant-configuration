@@ -158,7 +158,7 @@ type: 'custom:mini-graph-card'
 
 ## Les températures
 
-<details><summary>Température chambre</summary>
+<details><summary>Température Salle de bains</summary>
 
   ```yaml
 align_icon: left
@@ -179,7 +179,7 @@ hours_to_show: 24
 hour24: true
 line_color: '#1da4f2'
 more_info: false
-name: Chambre Morgane
+name: Salle de bains
 points_per_hour: 2
 show:
   labels: true
@@ -191,7 +191,7 @@ type: 'custom:mini-graph-card'
 
 ## Les hygrométries
 
-<details><summary>Hygrométrie chambre</summary>
+<details><summary>Hygrométrie Salle de bains</summary>
 
   ```yaml
 align_icon: left
@@ -212,7 +212,7 @@ hours_to_show: 24
 hour24: true
 line_color: '#1da4f2'
 more_info: false
-name: Chambre Morgane
+name: Salle de bains
 points_per_hour: 2
 show:
   labels: true
