@@ -8,3 +8,6 @@ badges: []
 cards:
   - !include ../cards/automation_deshumidifier.yaml
   - !include ../cards/automation_lights_cellier.yaml
+  - !include ../cards/automation_lights_office.yaml
+  - !include ../cards/automation_lights_room_cassie.yaml
+  - !include ../cards/automation_nut.yaml

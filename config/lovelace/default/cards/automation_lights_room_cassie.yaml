@@ -1,0 +1,11 @@
+type: entities
+entities:
+  - entity: automation.gestion_lumiere_cassie_allume_les_led_par_le_bouton_ikea
+  - entity: automation.gestion_lumiere_cassie_eteint_les_led_par_le_bouton_ikea
+  - type: divider
+  - entity: light.wled
+  - type: divider
+  - entity: sensor.ikea_switch_chbre_cassie_click
+  - entity: sensor.ikea_switch_chbre_cassie_update_state
+title: Lumières Cassie (maintenance)
+show_header_toggle: false

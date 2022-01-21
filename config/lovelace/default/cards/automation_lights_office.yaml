@@ -1,0 +1,11 @@
+type: entities
+entities:
+  - entity: automation.gestion_lumiere_bureau_allume_si_quelqu_un_et_faible_luminosite
+  - entity: automation.gestion_lumiere_bureau_eteint_si_personne
+  - type: divider
+  - entity: binary_sensor.aqara_motion_bureau_occupancy
+  - entity: sensor.aqara_motion_bureau_illuminance
+  - type: divider
+  - entity: light.ikea_806lm_bureau
+title: Lumières Bureau (maintenance)
+show_header_toggle: false

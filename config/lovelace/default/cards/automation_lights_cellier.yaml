@@ -1,6 +1,6 @@
 type: entities
 entities:
-  - entity: automation.motion_activated_light
+  - entity: automation.gestion_lumiere_cellier_allume_eteint_si_quelqu_un
   - type: divider
   - entity: binary_sensor.aqara_motion_cellier_occupancy
   - type: divider

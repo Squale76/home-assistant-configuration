@@ -1,0 +1,9 @@
+type: entities
+entities:
+  - entity: automation.gestion_onduleur
+  - type: divider
+  - entity: sensor.eaton_3s_550_status_data
+  - type: divider
+  - entity: script.notify_sm_a530f_sg
+title: Gestion Onduleur (maintenance)
+show_header_toggle: false
