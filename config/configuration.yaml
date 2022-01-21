@@ -9,6 +9,9 @@ homeassistant:
   internal_url:  !secret homeassistant_url_interne
 
   packages: !include_dir_named integrations
+  customize: !include_dir_merge_named customizations
+
+zone: !include_dir_merge_list zones
 
 frontend:
   extra_module_url:
@@ -16,3 +19,12 @@ frontend:
 
 input_boolean: !include_dir_merge_named entities/inputs/boolean/
 input_number: !include_dir_merge_named entities/inputs/number/
+
+api:
+
+alexa:
+  smart_home:
+    locale: fr-FR
+    endpoint: https://api.eu.amazonalexa.com/v3/events
+    client_id: !secret amzn_client_id
+    client_secret: !secret amzn_client_secret

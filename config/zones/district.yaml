@@ -1,0 +1,4 @@
+- name: Quartier
+  latitude: !secret zone_quartier_lat
+  longitude: !secret zone_quartier_lon
+  radius: 1000

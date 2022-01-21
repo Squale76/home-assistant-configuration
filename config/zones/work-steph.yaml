@@ -1,0 +1,5 @@
+- name: Travail-ST
+  latitude: !secret zone_travail_st_lat
+  longitude: !secret zone_travail_st_lon
+  radius: 500
+  icon: mdi:factory

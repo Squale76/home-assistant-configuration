@@ -1,0 +1,5 @@
+- name: Maison
+  latitude: 49.49148
+  longitude: 0.44664
+  radius: 50
+  icon: mdi:home
