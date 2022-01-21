@@ -5,6 +5,7 @@
 
 # Generic files
 *.log
+*.log.*
 *.logs
 *.db
 *.pyc
