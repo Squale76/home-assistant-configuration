@@ -25,6 +25,8 @@ lovelace:
       type: module
     - url: /hacsfiles/button-card/button-card.js
       type: module
+    - url: /hacsfiles/bar-card/bar-card.js
+      type: module
     # Intégration des ressources pour WLED card
     # https://github.com/Shaegi/Homeassistant-WLED-Card
     - url: /local/lib/tingle.min.css
