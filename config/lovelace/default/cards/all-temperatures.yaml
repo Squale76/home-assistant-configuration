@@ -17,7 +17,7 @@ series:
   #   name: Cellier
   - entity: sensor.aqara_temp_sdb_temperature
     name: SdB
-  - entity: sensor.aqara_temp_chbre_morgane_temperature
+  - entity: sensor.xiaomi_miflora_temperature
     name: Chbre Morgane
   - entity: sensor.aqara_temp_chbre_parents_temperature
     name: Chbre Parents

@@ -17,7 +17,7 @@ series:
   #   name: Cellier
   - entity: sensor.aqara_temp_sdb_humidity
     name: SdB
-  - entity: sensor.aqara_temp_chbre_morgane_humidity
-    name: Chbre Morgane
+  # - entity: sensor.aqara_temp_chbre_morgane_humidity
+  #   name: Chbre Morgane
   - entity: sensor.aqara_temp_chbre_parents_humidity
     name: Chbre Parents

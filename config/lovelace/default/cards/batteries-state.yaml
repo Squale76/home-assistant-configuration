@@ -7,8 +7,8 @@ sort_by_level: "asc"
 entities:
   - entity: sensor.controlcenter_niveau_de_batterie
     name: "Control Center"
-  - entity: sensor.aqara_temp_chbre_morgane_battery
-    name: "Aqara Temp/Hum Chambre Morgane"
+  # - entity: sensor.aqara_temp_chbre_morgane_battery
+  #   name: "Aqara Temp/Hum Chambre Morgane"
   - entity: sensor.aqara_temp_chbre_parents_battery
     name: "Aqara Temp/Hum Chambre Parents"
   - entity: sensor.aqara_temp_sdb_battery
@@ -17,6 +17,6 @@ entities:
     name: "Aqara Ouverture SdB"
   - entity: sensor.aqara_motion_cellier_battery
     name: "Aqara Mouvement Cellier"
-  - entity: sensor.sm_a530f_sg_niveau_de_batterie
+  - entity: sensor.sm_a530f_sg_battery_level
     name: "A8 (Sylvain)"
 type: 'custom:battery-state-card'
