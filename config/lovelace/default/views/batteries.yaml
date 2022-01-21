@@ -10,3 +10,4 @@ cards:
   # - !include ../cards/controlCenter_battery.yaml
   # - !include ../cards/sm_a530f_sg_battery.yaml
   - !include ../cards/batteries-state.yaml
+  - !include ../cards/ups-state.yaml

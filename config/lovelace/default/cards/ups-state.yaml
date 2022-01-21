@@ -1,0 +1,81 @@
+type: entities
+title: Eaton
+show_header_toggle: false
+entities:
+  - type: custom:hui-vertical-stack-card
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: picture
+            style: |
+              ha-card {
+                  width: 70%;
+                  background: none;
+                  box-shadow: none;
+              }
+            image: /local/eaton/eaton.png
+          - type: vertical-stack
+            cards:
+              - type: custom:bar-card
+                title_position: inside
+                name: Utilisation
+                show_icon: true
+                align: split
+                columns: 1
+                max: 100
+                unit_of_measurement: '%'
+                severity:
+                  - color: Green
+                    from: 0
+                    to: 25
+                  - color: Blue
+                    from: 26
+                    to: 50
+                  - color: Orange
+                    from: 51
+                    to: 80
+                  - color: Red
+                    from: 81
+                    to: 100
+                style: |
+                  ha-card {
+                      background: none;
+                      box-shadow: none;
+                  }
+                entity: sensor.eaton_3s_550_load
+              - type: custom:bar-card
+                title_position: inside
+                icon: mdi:battery
+                name: Charge
+                show_icon: true
+                align: split
+                columns: 1
+                max: 100
+                unit_of_measurement: '%'
+                severity:
+                  - color: Red
+                    from: 0
+                    to: 25
+                  - color: Orange
+                    from: 26
+                    to: 50
+                  - color: Green
+                    from: 51
+                    to: 100
+                style: |
+                  ha-card {
+                      background: none;
+                      box-shadow: none;
+                  }
+                entity: sensor.eaton_3s_550_battery_charge
+      - entities:
+          - entity: sensor.eaton_3s_550_status
+            name: Etat
+          - entity: sensor.eaton_3s_550_output_voltage
+            name: Tension de sortie
+        type: glance
+        style: |
+          ha-card {
+              background: none;
+          }
+state_color: true
