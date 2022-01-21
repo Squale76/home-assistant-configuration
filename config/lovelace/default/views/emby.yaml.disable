@@ -3,6 +3,7 @@
 #
 path: emby
 icon: 'mdi:filmstrip'
+lovelace-background: center / cover no-repeat url("/local/lovelace/background.png") fixed
 visible: !include_dir_list ../visibility
 badges: []
 cards:
