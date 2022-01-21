@@ -1,0 +1,13 @@
+# Création d'un capteur pour avoir le nombre de jours avant expiration du certificat.
+#
+# https://forum.hacf.fr/t/creation-de-lentite-temps-restant-dun-certificat-ssl/1670
+# https://forum.hacf.fr/t/creation-de-lentite-temps-restant-dun-certificat-ssl/1670/4
+#
+platform: template
+sensors:
+  cert_expiry_delay_domotique_grippon_fr:
+    friendly_name: "Expiration du certificat domotique.grippon.fr"
+    unit_of_measurement: "Jour(s)"
+    icon_template: mdi:timer-sand
+    value_template: >-
+      {{(strptime(states('sensor.cert_expiry_timestamp_domotique_grippon_fr'), '%Y-%m-%dT%H:%M:%S+00:00')-strptime(states('sensor.date'), "%Y-%m-%d")).days}}
