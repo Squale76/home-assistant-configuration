@@ -1,0 +1,21 @@
+#
+# https://www.home-assistant.io/integrations/binary_sensor.xiaomi_aqara/
+#
+- alias: "Gestion lumière bureau : Allume si quelqu'un et faible luminosité"
+  trigger:
+    !include ../../../triggers/office_motion_on.yaml
+  condition:
+    !include ../../../conditions/office_light_low.yaml
+  action:
+    - service: light.turn_on
+      target:
+        entity_id: light.ikea_806lm_bureau
+      # data:
+      #   brightness: 5
+- alias: "Gestion lumière bureau : Eteint si personne"
+  trigger:
+    !include ../../../triggers/office_motion_off.yaml
+  action:
+    - service: light.turn_off
+      target:
+        entity_id: light.ikea_806lm_bureau

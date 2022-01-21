@@ -1,0 +1,7 @@
+#
+# Evènement : présence d'une personne dans le bureau
+#
+platform: state
+entity_id: binary_sensor.aqara_motion_bureau_occupancy
+from: "on"
+to: "off"

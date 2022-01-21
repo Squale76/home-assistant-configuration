@@ -1,0 +1,7 @@
+#
+# Condition : luminosité faible dans le bureau
+#
+alias: "Luminosité faible dans le bureau"
+condition: numeric_state
+entity_id: sensor.aqara_motion_bureau_illuminance
+below: 20
