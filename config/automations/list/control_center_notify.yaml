@@ -27,6 +27,7 @@
                       milliseconds: 0
             - condition: not
               conditions:
+                # - !include ../conditions/control_center_charging.yaml
                 - !include ../conditions/control_center_unknown.yaml
                 - !include ../conditions/control_center_unavailable.yaml
       default: []

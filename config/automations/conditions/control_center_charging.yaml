@@ -1,0 +1,7 @@
+#
+# Condition : Batterie du Control état indisponible
+#
+alias: "Batterie du Control en charge"
+condition: state
+entity_id: binary_sensor.controlcenter_en_charge
+state: on
