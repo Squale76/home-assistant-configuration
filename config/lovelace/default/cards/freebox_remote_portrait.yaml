@@ -61,7 +61,7 @@ card:
             action: call-service
             service: freebox_player.remote
             service_data:
-              code: home,home,right,down,down,down,ok
+              code: red,right,down,down,down,ok
         - type: 'custom:button-card'
           template: default
           show_entity_picture: true
@@ -261,7 +261,14 @@ card:
             service_data:
               code: '0'
         - type: 'custom:button-card'
-          color_type: blank-card
+          template: default
+          show_entity_picture: true
+          entity_picture: /local/lovelace/jellyfin_logo.png
+          tap_action:
+            action: call-service
+            service: freebox_player.remote
+            service_data:
+              code: red,right,right,right,right,ok,down,ok
         - type: 'custom:button-card'
           template: green
           icon: 'mdi:menu-open'
