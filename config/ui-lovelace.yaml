@@ -1,15 +1,17 @@
 views:
   - visible:
       # Sylvain
-      - user: 8001cabb2da849c39138dff1521afa41
+      - user: !secret user_id_sylvain
       # Cassie
-      - user: 5d48915217474bc8af9afe7626200a3f
+      - user: !secret user_id_cassie
       # Jarvis
-      - user: 55dddfb527e849878cce6b4559d93f66
+      - user: !secret user_id_jarvis
       # Léo
-      - user: aa4468a71e724aff99c0ed9a0c077dbb
+      - user: !secret user_id_leo
       # Admin
-      - user: 971dbf8b5ae94402bbe40951236f8573
+      - user: !secret user_id_admin
+      # Steph
+      - user: !secret user_id_steph
     badges: []
     panel: true
     cards:
